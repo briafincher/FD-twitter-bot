@@ -15,8 +15,7 @@ def tweet(chains):
 
 def get_tweets():
 
-    statuses = api.GetHomeTimeline(count=100)
-
+    statuses = api.GetHomeTimeline(count=199)
     return " ".join([s.text for s in statuses])
 
 
